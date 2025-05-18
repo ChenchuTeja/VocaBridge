@@ -1,0 +1,67 @@
+VocaBridge: AI-Powered Voice Translator
+VocaBridge is an intelligent, Python-based voice-to-voice translation tool designed to bridge communication gaps between different languages. This AI-powered solution enables users to speak in one language and instantly receive translated audio output in another, making it ideal for multilingual interactions and breaking down language barriers.
+
+Key Features
+Speech Recognition: Captures and interprets spoken input using Google Speech Recognition.
+
+Language Detection: Automatically identifies the language of the spoken input with the help of langdetect.
+
+Translation Engine: Translates the detected language into a user-selected target language using deep-translator.
+
+Audio Output: Converts translated text into speech using Google Text-to-Speech (gTTS) and saves it as an audio file.
+
+Multi-Language Support: Currently supports major Indian languages including Hindi, Telugu, Tamil, Kannada, Malayalam, and Bengali.
+
+Setup Requirements
+Make sure the following Python libraries are installed:
+
+bash
+Copy code
+pip install speechrecognition deep-translator langdetect gtts
+How to Use VocaBridge
+Run the Program: Execute the Python script in your development environment.
+
+Choose Target Language: Enter your preferred target language when prompted (e.g., Hindi, Tamil, etc.).
+
+Speak into the Microphone: Speak clearly when prompted with “Listening…”.
+
+View and Hear Results:
+
+Your spoken words will be recognized and displayed.
+
+The spoken language will be automatically detected.
+
+The translated text will be shown in your terminal.
+
+The audio version of the translated output will be saved in the outputs folder and played automatically.
+
+Example Workflow
+Input Speech: “Hello, how are you?”
+
+Target Language: Hindi
+
+Output:
+
+Recognized Text: “Hello, how are you?”
+
+Detected Language: en (English)
+
+Translated Text: “नमस्ते, आप कैसे हैं?”
+
+Audio File: outputs/captured_voice_Hindi.mp3
+
+Supported Languages
+Language	Code
+Hindi	hi
+Telugu	te
+Tamil	ta
+Kannada	kn
+Malayalam	ml
+Bengali	bn
+
+Important Notes
+Ensure your microphone is properly connected and functioning.
+
+For accurate recognition, speak clearly in a quiet environment.
+
+You can expand language support by updating the language_map dictionary in the source code.
